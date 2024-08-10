@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .table-container {
+            width: 100%;
+            border: 2px solid #000; /* Full-width border */
+            padding: 10px;
+            background-color: #fff; /* White background for the container */
+            overflow-x: auto; /* Ensure responsiveness for smaller screens */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 3px; /* Add space between table cells */
+            background-color: pink; /* Pink background for table cells */
+        }
+
+        th, td {
+            padding: 30px;
+            border: 2px solid #000;
+            font-size: 1rem;
+        }
+
+        th {
+            background-color: #ffc0cb; /* Slightly darker pink for headers */
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            th, td {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>SR. NO</th>
+                    <th>SERVICES</th>
+                    <th>GUIDED BY</th>
+                    <th>TECHNOLOGY</th>
+                    <th>CONTACT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Digital Marketing</td>
+                    <td>Mr. Roshan Padole</td>
+                    <td>Digital Marketing</td>
+                    <td>Mobile No. 9595234631<br>roshan.primathink@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Web Development</td>
+                    <td>Mr. Ashish Mukarne</td>
+                    <td>PHP<br>HTML<br>CSS<br>JAVASCRIPT<br>J-QUERY</td>
+                    <td>Mobile No. 9595234631<br>ashish.primathink@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Graphic Design</td>
+                    <td>Mr. Anup Langade</td>
+                    <td>Photoshop<br>Illustrator<br>After Effect<br>Premiere Pro</td>
+                    <td>Mobile No. 9595234631<br>anup.primathink@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Training</td>
+                    <td>Mr. Aniket Dolas</td>
+                    <td>Digital Marketing</td>
+                    <td>Mobile No. 9595234631<br>aniket.primathink@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
